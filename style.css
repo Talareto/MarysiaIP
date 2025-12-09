@@ -1,0 +1,54 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+.gradient-overlay {
+  background: linear-gradient(135deg, #753B75 0%, #DEB4DE 100%);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(117, 59, 117, 0.2);
+}
+
+.btn-primary {
+  background: #753B75;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #5f2f5f;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(117, 59, 117, 0.3);
+}
+
+.btn-secondary {
+  background: #DEB4DE;
+  color: #753B75;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #d09fd0;
+  transform: translateY(-2px);
+}
+
+.section-title {
+  color: #753B75;
+  font-weight: 700;
+}

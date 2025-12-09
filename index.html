@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profesjonalna Fizjoterapia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="smooth-scroll">
+  <!-- Navigation -->
+  <nav class="w-full fixed top-0 z-50 bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div class="text-2xl font-bold" style="color: #753B75;">
+          Fizjoterapia
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#hero" class="text-gray-700 hover:text-purple-700 transition">Start</a>
+          <a href="#about" class="text-gray-700 hover:text-purple-700 transition">O mnie</a>
+          <a href="#services" class="text-gray-700 hover:text-purple-700 transition">Usługi</a>
+          <a href="#testimonials" class="text-gray-700 hover:text-purple-700 transition">Opinie</a>
+          <a href="#pricing" class="text-gray-700 hover:text-purple-700 transition">Cennik</a>
+          <a href="#contact" class="text-gray-700 hover:text-purple-700 transition">Kontakt</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+        <a href="#hero" class="block text-gray-700 hover:text-purple-700 py-2">Start</a>
+        <a href="#about" class="block text-gray-700 hover:text-purple-700 py-2">O mnie</a>
+        <a href="#services" class="block text-gray-700 hover:text-purple-700 py-2">Usługi</a>
+        <a href="#testimonials" class="block text-gray-700 hover:text-purple-700 py-2">Opinie</a>
+        <a href="#pricing" class="block text-gray-700 hover:text-purple-700 py-2">Cennik</a>
+        <a href="#contact" class="block text-gray-700 hover:text-purple-700 py-2">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="w-full gradient-overlay text-white pt-32 pb-24 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h1 id="hero-title" class="text-5xl md:text-6xl font-bold mb-6">Profesjonalna Fizjoterapia – Twoja droga do życia bez bólu</h1>
+      <p id="hero-subtitle" class="text-xl md:text-2xl mb-10 opacity-95">Indywidualne podejście, skuteczne metody i terapia dopasowana do Twoich potrzeb.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contact" class="btn-primary text-white px-8 py-4 rounded-full text-lg font-semibold inline-block">Umów wizytę</a>
+        <a href="#contact" class="btn-secondary px-8 py-4 rounded-full text-lg font-semibold inline-block">Skontaktuj się</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="w-full py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 id="about-title" class="text-4xl md:text-5xl section-title text-center mb-12">Poznaj mnie bliżej</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="w-full h-96 rounded-2xl flex items-center justify-center" style="background: linear-gradient(135deg, #DEB4DE 0%, #753B75 100%);">
+          <svg class="w-48 h-48 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <div>
+          <p class="text-lg mb-6 text-gray-700">Nazywam się <span id="therapist-name" class="font-semibold" style="color: #753B75;">[Imię i Nazwisko]</span>. <span id="about-description">Jestem dyplomowanym fizjoterapeutą specjalizującym się w pracy z pacjentami po urazach, kontuzjach i przeciążeniach. Łączę skuteczne techniki terapii manualnej z nowoczesną rehabilitacją, aby przywracać sprawność i komfort ruchu.</span></p>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="w-8 h-8 rounded-full flex items-center justify-center mr-4" style="background: #DEB4DE;">
+                <span class="text-xl">✓</span>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg mb-1" style="color: #753B75;">Wieloletnie doświadczenie</h3>
+                <p class="text-gray-600">Praktyka i ciągłe doskonalenie umiejętności</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-8 h-8 rounded-full flex items-center justify-center mr-4" style="background: #DEB4DE;">
+                <span class="text-xl">✓</span>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg mb-1" style="color: #753B75;">Skuteczne metody terapii</h3>
+                <p class="text-gray-600">Nowoczesne techniki i sprawdzone podejście</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-8 h-8 rounded-full flex items-center justify-center mr-4" style="background: #DEB4DE;">
+                <span class="text-xl">✓</span>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg mb-1" style="color: #753B75;">Indywidualny plan rehabilitacji</h3>
+                <p class="text-gray-600">Terapia dopasowana do Twoich potrzeb</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="w-full py-20 px-6" style="background: #f8f4f8;">
+    <div class="max-w-6xl mx-auto">
+      <h2 id="services-title" class="text-4xl md:text-5xl section-title text-center mb-16">W czym mogę Ci pomóc?</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+          <div class="w-16 h-16 rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #753B75, #DEB4DE);">
+            <span class="text-3xl">🙌</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style="color: #753B75;">Terapia manualna</h3>
+          <p class="text-gray-600">Precyzyjna praca z tkankami i stawami</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+          <div class="w-16 h-16 rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #753B75, #DEB4DE);">
+            <span class="text-3xl">🦴</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style="color: #753B75;">Rehabilitacja ortopedyczna</h3>
+          <p class="text-gray-600">Wsparcie po operacjach i urazach</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+          <div class="w-16 h-16 rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #753B75, #DEB4DE);">
+            <span class="text-3xl">⚽</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style="color: #753B75;">Fizjoterapia sportowa</h3>
+          <p class="text-gray-600">Powrót do pełnej sprawności sportowej</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+          <div class="w-16 h-16 rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #753B75, #DEB4DE);">
+            <span class="text-3xl">🩹</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style="color: #753B75;">Rehabilitacja pourazowa</h3>
+          <p class="text-gray-600">Skuteczne leczenie po kontuzjach</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+          <div class="w-16 h-16 rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #753B75, #DEB4DE);">
+            <span class="text-3xl">💆</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style="color: #753B75;">Masaż leczniczy</h3>
+          <p class="text-gray-600">Redukcja napięć i usprawnienie krążenia</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+          <div class="w-16 h-16 rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #753B75, #DEB4DE);">
+            <span class="text-3xl">🎗️</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style="color: #753B75;">Kinesiotaping</h3>
+          <p class="text-gray-600">Wsparcie regeneracji i stabilizacji</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+          <div class="w-16 h-16 rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #753B75, #DEB4DE);">
+            <span class="text-3xl">🧘</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style="color: #753B75;">Terapia bólu kręgosłupa</h3>
+          <p class="text-gray-600">Złagodzenie dolegliwości pleców</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+          <div class="w-16 h-16 rounded-full flex items-center justify-center mb-4" style="background: linear-gradient(135deg, #753B75, #DEB4DE);">
+            <span class="text-3xl">🏋️</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style="color: #753B75;">Ćwiczenia indywidualne</h3>
+          <p class="text-gray-600">Plan dostosowany do Twoich celów</p>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <a href="#contact" class="btn-primary text-white px-8 py-3 rounded-full text-lg font-semibold inline-block">Zobacz pełną ofertę</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section id="why" class="w-full py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl section-title text-center mb-16">Dlaczego pacjenci wybierają mój gabinet?</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center p-6">
+          <div class="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center" style="background: #DEB4DE;">
+            <span class="text-4xl">🎯</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3" style="color: #753B75;">Skuteczne i nowoczesne metody terapii</h3>
+          <p class="text-gray-600">Wykorzystuję sprawdzone techniki i najnowsze osiągnięcia fizjoterapii</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center" style="background: #DEB4DE;">
+            <span class="text-4xl">👤</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3" style="color: #753B75;">Indywidualne podejście i pełna diagnostyka</h3>
+          <p class="text-gray-600">Każdy pacjent otrzymuje plan terapii dopasowany do swoich potrzeb</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center" style="background: #DEB4DE;">
+            <span class="text-4xl">🏥</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3" style="color: #753B75;">Bezpieczne, komfortowe warunki</h3>
+          <p class="text-gray-600">Nowoczesny gabinet wyposażony w profesjonalny sprzęt</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center" style="background: #DEB4DE;">
+            <span class="text-4xl">🤝</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3" style="color: #753B75;">Wsparcie na każdym etapie leczenia</h3>
+          <p class="text-gray-600">Ciągły kontakt i pomoc w procesie rehabilitacji</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center" style="background: #DEB4DE;">
+            <span class="text-4xl">⚡</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3" style="color: #753B75;">Szybki powrót do sprawności</h3>
+          <p class="text-gray-600">Efektywna terapia przyspieszająca regenerację</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center" style="background: #DEB4DE;">
+            <span class="text-4xl">💪</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3" style="color: #753B75;">Długotrwałe rezultaty</h3>
+          <p class="text-gray-600">Uczę jak zapobiegać nawrotom i dbać o zdrowie</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="w-full py-20 px-6" style="background: #f8f4f8;">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl section-title text-center mb-16">Co mówią moi pacjenci?</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <div class="flex mb-4">
+            <span class="text-3xl">⭐⭐⭐⭐⭐</span>
+          </div>
+          <p class="text-gray-700 text-lg mb-4 italic">"Już po pierwszej wizycie poczułam dużą poprawę. Profesjonalne podejście i świetna atmosfera!"</p>
+          <p class="font-semibold" style="color: #753B75;">– Anna</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <div class="flex mb-4">
+            <span class="text-3xl">⭐⭐⭐⭐⭐</span>
+          </div>
+          <p class="text-gray-700 text-lg mb-4 italic">"Świetny specjalista, pomógł mi wrócić do sportu po kontuzji. Zdecydowanie polecam."</p>
+          <p class="font-semibold" style="color: #753B75;">– Michał</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="w-full py-20 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl md:text-5xl section-title text-center mb-16">Przykładowe ceny</h2>
+      <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 border-2" style="border-color: #DEB4DE;">
+        <div class="space-y-6">
+          <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+            <span class="text-lg font-semibold text-gray-800">Konsultacja + pierwsza terapia</span>
+            <span class="text-2xl font-bold" style="color: #753B75;">X zł</span>
+          </div>
+          <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+            <span class="text-lg font-semibold text-gray-800">Terapia manualna</span>
+            <span class="text-2xl font-bold" style="color: #753B75;">X zł</span>
+          </div>
+          <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+            <span class="text-lg font-semibold text-gray-800">Masaż leczniczy (30/60 min)</span>
+            <span class="text-2xl font-bold" style="color: #753B75;">X / X zł</span>
+          </div>
+          <div class="flex justify-between items-center pb-4">
+            <span class="text-lg font-semibold text-gray-800">Fizjoterapia sportowa</span>
+            <span class="text-2xl font-bold" style="color: #753B75;">X zł</span>
+          </div>
+        </div>
+        <div class="text-center mt-10">
+          <a href="#contact" class="btn-primary text-white px-8 py-3 rounded-full text-lg font-semibold inline-block">Pełny cennik</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="w-full py-20 px-6" style="background: #f8f4f8;">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl section-title text-center mb-8">Galeria gabinetu</h2>
+      <p class="text-center text-gray-600 text-lg mb-12">Zobacz gabinet, w którym prowadzę terapie w komfortowych i profesjonalnych warunkach.</p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="h-64 rounded-xl shadow-lg overflow-hidden" style="background: linear-gradient(135deg, #DEB4DE 0%, #753B75 100%);">
+          <div class="w-full h-full flex items-center justify-center">
+            <span class="text-6xl text-white">🏥</span>
+          </div>
+        </div>
+        <div class="h-64 rounded-xl shadow-lg overflow-hidden" style="background: linear-gradient(135deg, #753B75 0%, #DEB4DE 100%);">
+          <div class="w-full h-full flex items-center justify-center">
+            <span class="text-6xl text-white">💆</span>
+          </div>
+        </div>
+        <div class="h-64 rounded-xl shadow-lg overflow-hidden" style="background: linear-gradient(135deg, #DEB4DE 0%, #753B75 100%);">
+          <div class="w-full h-full flex items-center justify-center">
+            <span class="text-6xl text-white">🏋️</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="w-full py-20 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl md:text-5xl section-title text-center mb-16">Skontaktuj się ze mną</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="space-y-6">
+          <div class="flex items-start">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0" style="background: #DEB4DE;">
+              <span class="text-2xl">📞</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-1" style="color: #753B75;">Telefon</h3>
+              <p id="contact-phone" data-phone class="text-gray-700 text-lg"></p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0" style="background: #DEB4DE;">
+              <span class="text-2xl">📧</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-1" style="color: #753B75;">E-mail</h3>
+              <p id="contact-email" data-email class="text-gray-700 text-lg"></p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0" style="background: #DEB4DE;">
+              <span class="text-2xl">📍</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-1" style="color: #753B75;">Adres</h3>
+              <p id="contact-address" class="text-gray-700 text-lg">[Ulica, miasto]</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0" style="background: #DEB4DE;">
+              <span class="text-2xl">🕒</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-1" style="color: #753B75;">Godziny otwarcia</h3>
+              <p id="contact-hours" class="text-gray-700 text-lg">[np. Pon–Pt 9:00–18:00]</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center space-y-4">
+          <a href="#" data-phone class="btn-primary text-white px-8 py-4 rounded-xl text-lg font-semibold text-center">Zadzwoń teraz</a>
+          <a href="#" class="btn-secondary px-8 py-4 rounded-xl text-lg font-semibold text-center">Wyznacz trasę</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="w-full py-12 px-6 text-white" style="background: #753B75;">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Fizjoterapia</h3>
+          <p class="opacity-90">Profesjonalna terapia i rehabilitacja</p>
+          <p id="footer-details" class="opacity-75 text-sm mt-4">[Twoje dane firmy / NIP]</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Menu</h4>
+          <div class="space-y-2">
+            <a href="#about" class="block opacity-90 hover:opacity-100 transition">O mnie</a>
+            <a href="#services" class="block opacity-90 hover:opacity-100 transition">Usługi</a>
+            <a href="#pricing" class="block opacity-90 hover:opacity-100 transition">Cennik</a>
+            <a href="#contact" class="block opacity-90 hover:opacity-100 transition">Kontakt</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Kontakt</h4>
+          <div class="space-y-3">
+            <p class="opacity-90">
+              <span class="block text-sm opacity-75">Telefon:</span>
+              <span id="footer-phone" data-phone></span>
+            </p>
+            <p class="opacity-90">
+              <span class="block text-sm opacity-75">Email:</span>
+              <span id="footer-email" data-email></span>
+            </p>
+            <div class="mt-4">
+              <p class="text-sm opacity-75 mb-2">Śledź nas:</p>
+              <a href="https://instagram.com/twoj_profil" target="_blank" class="inline-flex items-center gap-2 opacity-90 hover:opacity-100 transition">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                <span>Instagram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/20 pt-6 text-center">
+        <p class="opacity-90">© <span id="footer-year">2024</span> <span id="footer-company">[Nazwa gabinetu]</span></p>
+        <p class="opacity-75 text-sm mt-2">Wszystkie prawa zastrzeżone.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
